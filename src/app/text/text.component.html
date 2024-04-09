@@ -1,0 +1,6 @@
+<div class="form-group">
+    <label>{{label}}</label>
+    <br/>
+    <input type="text" class="form-control" [ngModel]="value" (ngModelChange)="onValueChange($event)">
+    <div *ngIf="!isValid && touched" class="invalid-feedback">{{validationMessage}}</div>
+  </div>

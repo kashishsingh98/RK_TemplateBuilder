@@ -1,0 +1,11 @@
+<form>
+    <app-text 
+      label="Username" 
+      [(value)]="username" 
+      [isValid]="isUsernameValid()" 
+      validationMessage="Please enter a valid username">
+    </app-text>
+  
+  
+    <button type="submit" [disabled]="!isFormValid()">Submit</button>
+</form>
